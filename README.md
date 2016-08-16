@@ -2,11 +2,11 @@
 
 # Install
 ```
-npm install shit -g
+npm install paca -g
 ```
 
 # Usage
 ```
 cd /your/project/folder
-shit t config
+paca t config
 ```
