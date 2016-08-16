@@ -13,8 +13,6 @@ function copyRecursiveSync(src, dest) {
     var stats = fs.statSync(src);
     var isDirectory = stats.isDirectory();
 
-    console.log(stats);
-
     if (isDirectory) {
         fs.mkdirSync(dest);
         fs.readdirSync(src).forEach(function (childItemName) {

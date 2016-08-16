@@ -4,8 +4,9 @@
 
 console.log('Shit it.');
 console.log('I am now in ', __dirname);
+console.log('current command directory is: ', process.cwd());
 
-var templates = require('./templates');
+var templates = require('./templates.js');
 
 if (process.argv.length > 2) {
     var command = process.argv[2];
@@ -19,7 +20,7 @@ if (process.argv.length > 2) {
                 break;
 
             default:
-                templates.copy(options, process.argv[4]);
+                templates.copy(options, process.argv[4] || process.cwd() + '/' + options);
                 break;
         }
     }

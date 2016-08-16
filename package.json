@@ -1,6 +1,6 @@
 {
   "name": "paca",
-  "version": "1.0.1",
+  "version": "1.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/Jeff-Tian/shit/issues"
   },
-  "homepage": "https://github.com/Jeff-Tian/shit#readme"
+  "homepage": "https://github.com/Jeff-Tian/shit#readme",
+  "bin": {
+    "paca": "./index.js"
+  },
+  "files": [
+    "templates/",
+    "templates.js"
+  ]
 }
